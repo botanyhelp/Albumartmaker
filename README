@@ -1,0 +1,23 @@
+Python program to read text and create a 300x300 image file of the text. 
+
+Album art are those things you see on the ipod when playing a song.  Its 
+part of the ID3 tag system of mp3 files.  Circa 2010 ipods displayed 300x300 
+png files nicely.  This program only makes the 300x300 image file.  The 
+text to be put into the image (and many other details) are hardcoded into 
+the program.  It would be most useful with many MP3 files where you know 
+the text you want to put into the image.  If your MP3 has six songs in it 
+and you want to make an image with 6 artist/album/song listings, then this 
+program can do it.  Notice that this program will only create the image file. 
+You'll need another program to push it into your existing MP3 file's tag. 
+
+You can test it like this:
+
+python piller2.py
+
+...and you will have a new PNG file in the current directory:
+
+test.png
+
+Requires modules Image, ImageDraw, and texwrap
+Will use ImageFont if you have them (/usr/share/fonts/bitstream-vera/Vera.ttf)
+
